@@ -67,6 +67,11 @@ for r in range(3,rows+1):
     elem = driver.find_element_by_xpath("// *[ @ id = \"app-layout\"] / div / div / div / form / button")
     elem.click()
     time.sleep(2)
+    elem = driver.find_element_by_xpath(" // *[ @ id = \"app-layout\"] / div / div / div / div[3] / div / a / span")
+    elem.click()
+
+
+
 
 
     def teardown(self):
