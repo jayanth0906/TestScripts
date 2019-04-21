@@ -43,7 +43,7 @@ class Deletestock(unittest.TestCase):
         time.sleep(1)
 
         elem = driver.find_element_by_xpath("// *[ @ id = \"app-layout\"] / div / div / div / "
-                                            "div[3] / table / tbody / tr[2] / td[8] / a")
+                                            "div[3] / table / tbody / tr[2] / td[8] / a" )
 
         elem.click()
 
