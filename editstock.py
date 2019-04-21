@@ -41,9 +41,11 @@ class Editstock(unittest.TestCase):
                                             " / div / div / div / div / div[3] / div / div / p[2] / a")
 
         elem.click()
-        elem = driver.find_element_by_xpath(" // *[ @ id = \"app-layout\"] / div / div / div / div[3] / table / tbody / tr[2] / td[7] / a ")
+        elem = driver.find_element_by_xpath(" // *[ @ id = \"app-layout\"] / div / div / div / div[3]"
+                                            " / table / tbody / tr / td[7] / a ")
         elem.click()
         elem = driver.find_element_by_id("id_shares")
+
         elem.clear()
         elem.send_keys("300")
         time.sleep(5)
